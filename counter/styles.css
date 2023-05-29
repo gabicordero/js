@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+body {
+    font-family: Roboto;
+    background-color: #f555;
+}
+
+.btn {
+    text-transform: uppercase;
+    background-color: transparent;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-container{
+    margin: 1rem;
+}
+
+#value {
+    font-size: 4rem;
+}
