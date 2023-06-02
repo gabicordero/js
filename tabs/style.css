@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #fafafa;
+    color: #535353;
+    line-height: 1.5;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img:not(.logo){
+    width: 100%;
+}
+
+img {
+    display: block;
+}
+
+h1, h2, h3, h4 {
+    letter-spacing: 0.25rem;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 0.875;
+}
+
+p {
+    margin-bottom: 1.25rem;
+}
+
+
+@media screen and (min-width: 800px){
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    body {
+        font-size: 1rem;
+    }
+}
+
+.section {
+    padding: 5rem 0;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title p {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about-img {
+    margin-bottom: 2rem;
+}
+
+.about-img img {
+    border-radius: 12px;
+    object-fit: cover;
+    height: 20rem;
+}
+
+@media screen and (min-width: 992px){
+    .about-img {
+        margin-bottom: 0;
+    }
+
+    .about-center {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
+}
+
+.about {
+    background-color: #fff;
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+
+.btn-container {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tab-btn:nth-child(1){
+    border-top-left-radius: 12px;
+}
+
+.tab-btn:nth-child(3){
+    border-top-right-radius: 12px;
+}
+
+.tab-btn {
+    display: block;
+    padding: 1rem 0;
+    border: none;
+    text-transform: capitalize;
+    font-size: 1rem;
+    background-color: hsl(212, 33%, 89%);
+    cursor: pointer;
+    transition: all 0.5s linear;
+    letter-spacing: 0.25rem;
+}
+
+.tab-btn:hover:not(.active) {
+    background-color: hsl(205, 100%, 96%);
+    color: #49a6e9;
+}
+
+.about-content {
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 2rem 1.5rem;
+}
+
+.content {
+    display: none;
+}
+
+.tab-btn.active{
+    background: #fff;
+}
+
+.content.active {
+    display: block;
+}
