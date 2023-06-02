@@ -79,6 +79,14 @@ const menu = [
         img: "./img/item-10.jpeg",
         desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
     },
+    {
+        id: 11,
+        title: "",
+        category: "",
+        price: 13.99,
+        img: "",
+        desc: ``
+    },
 ]
 
 const sectionCenter = document.querySelector('.section-center')
