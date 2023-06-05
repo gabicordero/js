@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 40rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+    color: hsl(205, 86%, 17%);
+}
+
+.lorem-form {
+    text-transform: capitalize;
+    margin-top: 2rem;
+    letter-spacing: 0.25rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 1.25rem;
+    color: hsl(205, 86%, 17%);
+}
+
+input {
+    padding: 0.25rem 0.5rem;
+    width: 4rem;
+    border-radius: 12px;
+    border: none;
+    margin: 0 0.5rem;
+    font-size: 1.25rem;
+}
+
+button {
+    background-color: hsl(205, 100%, 96%);
+    border: none;
+    padding: 0.75rem 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+    button:hover{
+        color: #fff;
+        background-color: hsl(204, 100%, 57%);
+        box-shadow: 1px 1px 10px #838383;
+    }
+
+.result {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    background-color: #f7f7f7;
+}
