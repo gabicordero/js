@@ -3,7 +3,7 @@ const productCenter = document.querySelector('.products-center');
 const url = 'https://course-api.com/javascript-store-products';
 
 // const btn = document.querySelector('.btn');
-const result = document.querySelector('.result');
+// const result = document.querySelector('.result');
 
 // btn.addEventListener('click', () => {
 //     fetchDadJoke();
@@ -30,11 +30,11 @@ const displayProducts = (list) => {
             const { url: img } = product.fields.image[0];
             const formatPrice = price / 100;
 
-            return `<a href="product.html?id=${id}&name=john&age=25" class="single-product">
-        <img src="${img}" alt="${title}" class="single-product-img img">
+            return `<a class="single-product" href="product.html?id=${id}&name=john&age=25" >
+        <img class="single-product-img img" src="${img}" alt="${title}"/>
         <footer>
             <h5 class="name">${title}</h5>
-            <span class="price>${formatPrice}</span>
+            <span class="price">${formatPrice}</span>
         </footer>
         </a>`;
         })
@@ -48,3 +48,5 @@ const start = async () => {
 }
 
 start();
+
+
